@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+}
+
+/* Custom animations */
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Custom components */
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition duration-300;
+}
+
+.btn-secondary {
+  @apply border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition duration-300;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300;
+}
