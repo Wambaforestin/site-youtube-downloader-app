@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# setup / zip files
+*.tar
+*.zip
+
+# images and videos
+img/*.jpg
+img/*.jpeg
+img/*.png
+img/*.gif
+img/*.webp
