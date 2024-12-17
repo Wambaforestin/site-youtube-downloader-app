@@ -1,107 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Download YouTube videos safely and easily with our family-friendly desktop application. Perfect for offline viewing and family entertainment.">
-    <title>YouTube Downloader - Safe & Simple Video Downloads</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="bg-gray-50">
-    <nav class="fixed w-full bg-white shadow-sm z-50">
-      <div class="container mx-auto px-4 py-3">
-        <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-4">
-            <img src="img/icons/youtube_vd_icon.ico" alt="Family YouTube Downloader" class="h-8">
-            <span class="font-bold text-xl text-primary">YouTube Downloader</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Download YouTube videos safely and easily with our family-friendly desktop application. Perfect for offline viewing and family entertainment.">
+  <title>YouTube Downloader - Safe & Simple Video Downloads</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50">
+  <nav class="fixed w-full bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="img/icons/youtube_vd_icon.ico" alt="Family YouTube Downloader" class="h-8">
+          <span class="font-bold text-xl text-primary">YouTube Downloader</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
+          <a href="#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
+          <a href="#faq" class="text-gray-600 hover:text-primary">FAQ</a>
+          <a href="#support" class="text-gray-600 hover:text-primary">Support</a>
+        </div>
+        <a href="#download" class="btn-primary .btn-primary:hover">
+          Download Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="pt-24 pb-20 bg-gradient-to-b from-blue-50 to-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Download YouTube Videos Simply and Safely
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+              The perfect solution for families in Africa to watch YouTube videos offline.
+              Safe, simple, and designed with your needs in mind.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#download" class="btn-primary .btn-primary:hover">
+                Download Free
+              </a>
+              <a href="#how-it-works" class="btn-secondary">
+                Learn More
+              </a>
+            </div>
           </div>
-          <div class="hidden md:flex space-x-8">
-            <a href="#features" class="text-gray-600 hover:text-primary">Features</a>
-            <a href="#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
-            <a href="#faq" class="text-gray-600 hover:text-primary">FAQ</a>
-            <a href="#support" class="text-gray-600 hover:text-primary">Support</a>
+          <div class="md:w-1/2" data-aos="fade-left">
+            <img src="img/youtube-video-img.png" alt="Application Preview" class="rounded-lg shadow-xl">
           </div>
-          <a href="#download" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition">
-            Download Now
-          </a>
         </div>
       </div>
-    </nav>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
+          <div class="text-primary text-4xl mb-4">🔒</div>
+          <h3 class="text-xl font-semibold mb-3">Safe & Secure</h3>
+          <p class="text-gray-600">
+            100% virus-free and family-friendly. No data collection, works completely offline.
+          </p>
+        </div>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="pt-24 pb-20 bg-gradient-to-b from-blue-50 to-white">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
-              <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Download YouTube Videos Simply and Safely
-              </h1>
-              <p class="text-xl text-gray-600 mb-8">
-                The perfect solution for families in Africa to watch YouTube videos offline. 
-                Safe, simple, and designed with your needs in mind.
-              </p>
-              <div class="flex space-x-4">
-                <a href="#download" class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition text-lg">
-                  Download Free
-                </a>
-                <a href="#how-it-works" class="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition text-lg">
-                  Learn More
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
+          <div class="text-primary text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-semibold mb-3">Easy to Use</h3>
+          <p class="text-gray-600">
+            Simple interface - just paste the URL and click download.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
+          <div class="text-primary text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-semibold mb-3">Progress Tracking</h3>
+          <p class="text-gray-600">
+            Real-time download progress with Windows notifications.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
+          <div class="text-primary text-4xl mb-4">📦</div>
+          <h3 class="text-xl font-semibold mb-3">Batch Downloads</h3>
+          <p class="text-gray-600">
+            Download multiple videos at once with queue management.
+          </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
+          <div class="text-primary text-4xl mb-4">💾</div>
+          <h3 class="text-xl font-semibold mb-3">Download History</h3>
+          <p class="text-gray-600">
+            Keep track of your downloaded videos for easy access.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- how it works section -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+      <div class="relative container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">How It Works</h2>
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- Step 1 -->
+          <div class="pt-8 p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-3">Download & Install</h3>
+            <p class="text-gray-600">
+              Download the ZIP package and extract it to your preferred location.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="pt-8 p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-3">Handle Security</h3>
+            <p class="text-gray-600">
+              Add an exception in Windows Defender or click "More info" → "Run anyway".
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="pt-8 p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-3">Copy URL</h3>
+            <p class="text-gray-600">
+              Copy the YouTube video URL you want to download.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+
+          <div class="pt-8 p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-3">Download Video</h3>
+            <p class="text-gray-600">
+              Paste the URL, select quality, and click Download.
+            </p>
+          </div>
+        </div>
+    </section>
+    <!-- Download Section -->
+    <section id="download" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Download YouTube Downloader</h2>
+          <div class="bg-white rounded-xl shadow-lg p-8 mb-8" data-aos="fade-up">
+            <div class="flex flex-col items-center space-y-6">
+              <div class="text-6xl">💾</div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Latest Version: 1.0.0</h3>
+                <p class="text-gray-600 mb-6">Windows Compatible • 22,561 ko</p>
+                <a href="setup-youtube-downloader.zip" download class="btn-primary inline-flex items-center space-x-2">
+                  <span>Download for Windows</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
                 </a>
               </div>
             </div>
-            <div class="md:w-1/2" data-aos="fade-left">
-              <img src="img/youtube-video-img.png" alt="Application Preview" class="rounded-lg shadow-xl">
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 text-left">
+            <div class="card" data-aos="fade-right">
+              <h3 class="text-xl font-semibold mb-4">System Requirements</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Windows 7/8/10/11</li>
+                <li>• Internet connection for downloading</li>
+                <li>• 50MB free disk space</li>
+                <li>• No additional software required</li>
+              </ul>
+            </div>
+            <div class="card" data-aos="fade-left">
+              <h3 class="text-xl font-semibold mb-4">Package Contents</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li>• YouTube Downloader.exe</li>
+                <li>• Installation guide.md</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Features Section -->
-      <section id="features" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-16">Why Choose YouTube Downloader?</h2>
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-6 rounded-lg border border-gray-200 hover:shadow-lg transition" data-aos="fade-up">
-              <div class="text-primary text-4xl mb-4">📱</div>
-              <h3 class="text-xl font-semibold mb-3">User-Friendly Interface</h3>
-              <p class="text-gray-600">Simple and intuitive design that anyone in the family can use with ease.</p>
-            </div>
-            <!-- Add more feature cards -->
-          </div>
-        </div>
-      </section>
-
-      <!-- How It Works -->
-      <section id="how-it-works" class="py-20 bg-gray-50">
-        <!-- Implementation continues -->
-      </section>
-
-      <!-- Download Section -->
-      <section id="download" class="py-20 bg-white">
-        <!-- Implementation continues -->
-      </section>
-
-      <!-- FAQ Section -->
-      <section id="faq" class="py-20 bg-gray-50">
-        <!-- Implementation continues -->
-      </section>
-
-      <!-- Support Section -->
-      <section id="support" class="py-20 bg-white">
-        <!-- Implementation continues -->
-      </section>
-    </main>
-
-    <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto px-4">
-        <!-- Footer content -->
       </div>
-    </footer>
+    </section>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+
+          <!-- FAQ 1 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="faq-question w-full text-left px-6 py-4 flex justify-between items-center">
+              <span class="font-semibold">Is this application safe to use?</span>
+              <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 py-4 border-t border-gray-200">
+              <p class="text-gray-600">
+                Yes, YouTube Downloader is 100% safe and virus-free. The security warnings are normal due to the
+                application not being signed with a commercial certificate.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="faq-question w-full text-left px-6 py-4 flex justify-between items-center">
+              <span class="font-semibold">Why does Windows Defender show a warning?</span>
+              <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 py-4 border-t border-gray-200">
+              <p class="text-gray-600">
+                This happens because the application isn't signed with a commercial certificate and uses PyInstaller.
+                It's completely normal and you can safely add an exception in Windows Defender.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="faq-question w-full text-left px-6 py-4 flex justify-between items-center">
+              <span class="font-semibold">How do I handle antivirus warnings?</span>
+              <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 py-4 border-t border-gray-200">
+              <p class="text-gray-600">
+                You can either add an exception in Windows Defender or click "More info" → "Run anyway" when launching
+                the application.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="faq-question w-full text-left px-6 py-4 flex justify-between items-center">
+              <span class="font-semibold">What are the system requirements?</span>
+              <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 py-4 border-t border-gray-200">
+              <p class="text-gray-600">
+                The application works on Windows systems and requires an internet connection for downloading videos. No
+                additional software is needed.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="faq-question w-full text-left px-6 py-4 flex justify-between items-center">
+              <span class="font-semibold">Where are my downloaded videos saved?</span>
+              <svg class="faq-icon w-5 h-5 transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 py-4 border-t border-gray-200">
+              <p class="text-gray-600">
+                Videos are saved in the "videos" folder within the application directory.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="support" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-16">Support & Help</h2>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="card" data-aos="fade-up">
+              <h3 class="text-xl font-semibold mb-4">Documentation</h3>
+              <p class="text-gray-600 mb-4">Access our comprehensive user guide and troubleshooting documentation.</p>
+              <a href="#" class="text-primary hover:text-secondary">View Documentation →</a>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+              <h3 class="text-xl font-semibold mb-4">Contact Support</h3>
+              <p class="text-gray-600 mb-4">Need help? Our support team is here to assist you.</p>
+              <a href="#" class="text-primary hover:text-secondary">Contact Us →</a>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-8" data-aos="fade-up">
+            <h3 class="text-xl font-semibold mb-6">Report an Issue</h3>
+            <form class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email"
+                  class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
+                  required>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Issue Description</label>
+                <textarea
+                  class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
+                  rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Submit Report</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Family YouTube Downloader</h3>
+            <p class="text-gray-400">Safe and simple YouTube video downloads for families in Africa.</p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+              <li><a href="#how-it-works" class="text-gray-400 hover:text-white">How It Works</a></li>
+              <li><a href="#download" class="text-gray-400 hover:text-white">Download</a></li>
+              <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Support</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Report Issues</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">License</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+          <p class="text-gray-400">&copy;
+            <script>document.write(new Date().getFullYear());</script> YouTube Downloader. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

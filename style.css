@@ -1,29 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary: #FF0000; /* YouTube red */
+  --secondary: #FF6347; /* Tomato for a secondary color */
+}
+
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Custom animations */
 .hover-scale {
-  @apply transition-transform duration-300 hover:scale-105;
+  transition: transform 0.3s;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
 }
 
 /* Custom components */
 .btn-primary {
-  @apply bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition duration-300;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
 }
 
 .btn-secondary {
-  @apply border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition duration-300;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: white;
 }
 
 .card {
-  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
